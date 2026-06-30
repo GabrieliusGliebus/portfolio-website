@@ -8,7 +8,7 @@ function LandingPage() {
     <main className={styles.landingPage}>
       <section className={styles.about}>
         <div>
-          <h1>Gabrielius Gliebus portfolio</h1>
+          <h1>Gabrielius Gliebus portfolio a</h1>
           <p className={styles.intro}>{Intro.title}</p>
         </div>
 
