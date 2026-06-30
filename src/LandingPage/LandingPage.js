@@ -14,7 +14,7 @@ function LandingPage() {
         </div>
 
         <aside className={styles.cvCard}>
-          <a href="/GabrieliusGliebusCV.pdf" download>
+          <a href={`${process.env.PUBLIC_URL}/GabrieliusGliebusCV.pdf`} download>
             Download my CV
           </a>
         </aside>
