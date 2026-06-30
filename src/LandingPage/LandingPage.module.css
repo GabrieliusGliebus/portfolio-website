@@ -65,6 +65,15 @@
   padding-top: 70px;
 }
 
+.indexSection {
+  padding-bottom: 84px;
+  border-bottom: 1px solid var(--page-line);
+}
+
+.recentSection {
+  padding-top: 84px;
+}
+
 .sectionTitle {
   display: flex;
   align-items: baseline;

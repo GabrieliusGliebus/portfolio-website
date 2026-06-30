@@ -1,0 +1,99 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--page-line);
+  background: rgba(11, 12, 11, .94);
+}
+
+.headerInner {
+  width: min(1450px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 12px 0 20px;
+}
+
+.categoriesPage {
+  min-height: 100vh;
+  width: min(1450px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 64px 0 72px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 20px;
+  color: var(--page-text);
+  border: 1px solid var(--page-line);
+  border-radius: 2px;
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background-color .18s ease, border-color .18s ease, color .18s ease;
+}
+
+.backLink span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.backLink:hover {
+  color: #f4e8e8;
+  border-color: var(--page-accent);
+  background: rgba(143, 42, 42, .16);
+}
+
+.eyebrow {
+  margin: 64px 0 20px;
+  color: var(--page-accent);
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.categoriesPage h1 {
+  margin: 0;
+  font-size: clamp(56px, 7vw, 104px);
+  line-height: .95;
+  letter-spacing: -5px;
+}
+
+.projectCount {
+  margin: 22px 0 0;
+  color: var(--page-muted);
+  font-family: "Courier New", monospace;
+  font-size: 20px;
+}
+
+.projectList {
+  display: grid;
+  gap: 42px;
+  margin-top: 84px;
+  padding-top: 84px;
+  border-top: 1px solid var(--page-line);
+}
+
+@media (max-width: 560px) {
+  .headerInner,
+  .categoriesPage {
+    width: calc(100% - 36px);
+  }
+
+  .headerInner {
+    padding: 10px 0 16px;
+  }
+
+  .categoriesPage {
+    padding: 40px 0;
+  }
+
+  .backLink {
+    padding: 14px 16px;
+    font-size: 20px;
+  }
+
+  .categoriesPage h1 {
+    letter-spacing: -2px;
+  }
+}

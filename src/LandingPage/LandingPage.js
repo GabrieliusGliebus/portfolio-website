@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./LandingPage.module.css";
 import ProjectCard from "../Reusables/ProjectCard/ProjectCard";
 import { Intro, mostRecentProject } from "../Texts/LandingPageIntro";
@@ -19,32 +20,32 @@ function LandingPage() {
         </aside>
       </section>
 
-      <section className={styles.section}>
+      <section className={`${styles.section} ${styles.indexSection}`}>
         <div className={styles.sectionTitle}>
           <h2>Index</h2>
           <span>project categories</span>
         </div>
 
         <nav className={styles.index} aria-label="Project categories">
-          <a href="#unity">
+          <Link to="/categories/unity">
             <strong>Unity</strong>
-          </a>
-          <a href="#unreal">
+          </Link>
+          <Link to="/categories/unreal-engine">
             <strong>Unreal Engine</strong>
-          </a>
-          <a href="#godot">
+          </Link>
+          <Link to="/categories/godot">
             <strong>Godot</strong>
-          </a>
-          <a href="#mobile">
+          </Link>
+          <Link to="/categories/mobile-development">
             <strong>Mobile development</strong>
-          </a>
-          <a href="#other">
+          </Link>
+          <Link to="/categories/other-projects">
             <strong>Other projects</strong>
-          </a>
+          </Link>
         </nav>
       </section>
 
-      <section className={styles.section}>
+      <section className={`${styles.section} ${styles.recentSection}`}>
         <div className={styles.sectionTitle}>
           <h2>Most recent</h2>
           <span>latest project</span>
