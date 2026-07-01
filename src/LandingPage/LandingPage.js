@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./LandingPage.module.css";
 import ProjectCard from "../Reusables/ProjectCard/ProjectCard";
-import { Intro, mostRecentProject } from "../Texts/LandingPageIntro";
+import { Intro } from "../Texts/LandingPageIntro";
+import { AllProjects } from "../Texts/Projects";
 
 function LandingPage() {
+  const mostRecentProject = AllProjects[0];
+
   return (
     <main className={styles.landingPage}>
       <section className={styles.about}>
